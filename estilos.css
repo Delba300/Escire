@@ -48,7 +48,7 @@ body{
 }
 
 #Seccion-Presentacion{
-    display:none;
+    display:flex;
 }
 
 #presentacionYLogo-Contenedor{
@@ -134,7 +134,7 @@ body{
 /* SECCION CUENTOS */
 
 #seccion-cuentos{
-    display: flex;
+    display: none;
 }
 
 #contenedor-cuentos{
