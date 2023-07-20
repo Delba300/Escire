@@ -9,9 +9,14 @@
     box-sizing: border-box;
     background-position: center;
     font-family: 'Dancing Script', cursive;
+    transition: 0.3s;
+
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 body{
     background-color: #73FAD0;    
@@ -21,6 +26,7 @@ body{
     justify-content: center;
     background-image: url('Assets/Imagenes/Fondo\ de\ Pantalla\ 3.jpg');
     /* background-image: linear-gradient(to right bottom, yellow,rgb(217, 221, 198)); */
+    background-size: cover;
 }
 
 #contenido{   
@@ -30,11 +36,20 @@ body{
     background-color: rgb(245, 216, 138);
     /* border: 0.1vw solid black; */
     box-shadow: 0px 1.5vw 17px -10px rgba(0, 0, 0, 0.35);    
+
+}
+
+.seccion{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 }
 
+#Seccion-Presentacion{
+    display:none;
+}
 
 #presentacionYLogo-Contenedor{
 
@@ -99,4 +114,101 @@ body{
 .tarjeta:hover h2{
     color: gray;
     transform: scale(1.1)
+}
+
+
+#boton_inicio{
+    position: absolute;
+    margin: 0.5vw;
+    font-size: 2vw;
+    background-color: white;
+    padding: 0.2vw 0.8vw;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+}
+
+#boton_inicio:hover{
+    cursor: pointer;
+}
+
+/* SECCION CUENTOS */
+
+#seccion-cuentos{
+    display: flex;
+}
+
+#contenedor-cuentos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:30%;
+    height: 100%;
+    border-right: 0.5vw dotted black;
+}
+
+.boton-un-cuento{
+    width: 70%;
+    height: 12%;
+    border: 1px solid black;
+    border-radius: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7vw;
+    background-color: bisque;
+}
+
+.boton-un-cuento:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#Presentacion-cuento{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo-cuento{
+    font-size: 2vw;
+    text-align: center
+}
+
+#imagen-de-presentacion-cuento{
+    width: 80%;
+    height:60%;
+    /* border:1px solid black; */
+    background-size: contain;
+}
+
+#seccion-cuentos #imagen-de-presentacion-cuento{
+    background-image: url('Assets/Imagenes/Corazon\ Delator.jpg');
+
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-descarga-cuento{
+    font-size: 2vw;
+    width: 16vw;
+    height: 5vw;
+    background-color: orange;
+    border-radius: 25%/20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-descarga-cuento:hover{
+    cursor: pointer;
 }
